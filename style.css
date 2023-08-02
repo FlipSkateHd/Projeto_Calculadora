@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+/* codigo de verdade */
+body{
+  background-color: black;
+  color: white;
+}
+
+#monitor{
+  display:block;
+  width: 29.4%;
+  background-color: #5c5c5c;
+  font-size: 30px;
+  font-weight: 500px;
+  height: 35px;
+  margin-top: 20%;
+  margin-left:37%;
+  text-align: right;
+  border-style: none;
+}
+
+
+.button{
+  font-size: 20px;
+  cursor:pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 0%;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.button:active{
+  animation: botao, 5s, infinite;
+  background-color: #c8c8c8;
+  font-size:18px;
+}
+
+
+
+#calculadora{
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  margin-left: 37%;
+}
+
+#um,#quatro,#sete{
+  display:grid;
+  grid-column-start: 1;
+  
+}
+
+#mais{
+  display:grid;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-end: 4;
+}
+
+#menos{
+  display:grid;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-end: 4;
+}
+
+#multiplicacao{
+  display:grid;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-end: 4;
+}
+
+#divisao{
+  display:grid;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+#igual{
+  display:grid;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  grid-column-end: 4;
+}
+
+#limpa{
+  display:grid;
+  grid-column: 3 3;
+}
+#mais, #menos, #multiplicacao,#igual{
+  display: grid;
+  grid-column-start: 4;
+}
